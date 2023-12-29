@@ -4,23 +4,25 @@ import { SearchBar } from './components/SearchBar.js';
 
 import { SearchResultsList } from './components/SearchResultsList.js';
 
-import { SearchByCountry } from './components/SearchByCountry.js';
-
 import './App.css';
 
 function App() {
 
   const [results, setResults] = useState([]);
+  const [input, setInput] = useState("");
 
   return (
     <div className="App">
+  
+        <h1>Art Galery</h1>
+
+      
       <div className="search-bar-container">
          <SearchBar setResults={setResults}/>
- 
           
-<SearchResultsList results={results}/>
+          <SearchResultsList results={results} input={input}/>
 
-<SearchByCountry></SearchByCountry>
+
       </div>
     </div>
   );
