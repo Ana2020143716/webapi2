@@ -93,7 +93,7 @@ export const SearchBar = ({ setResults }) => {
         <div className="input-text">
             <FaSearch id="search-icon" />
             <input
-                placeholder="Procura pelo título..."
+                placeholder="título..."
                 value={input}
                 onChange={(e) => handleChange(e.target.value)}
             />
